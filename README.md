@@ -1,1 +1,3 @@
 # MpMabiriziEmmanuel
+Emmanuel is a looking forward to re-campaigning for the general elections for the post of Member of Parliament of Uganda ,he previously managed to know his weakness and with comfidence,Emmanuel comes back 10 times a competitive candidate for this post! He's relying on donations to sustain all his operations. Your support enables him to be competent throught the forth coming elections! Kindly consider donating to help us win the Victory!
+ People Power! Our Power!

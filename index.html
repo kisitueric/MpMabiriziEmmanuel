@@ -445,6 +445,49 @@ background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
+/* Scrollable img*/
+.image-gallery {
+position: relative;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+.gallery-wrapper {
+display: inline-block;
+}
+
+.gallery-wrapper img {
+width: 300px;
+height: auto;
+margin-right: 10px;
+border-radius: 10px;
+}
+
+.gallery-arrows {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+}
+
+.arrow {
+  color:;
+position: absolute;
+font-size: 24px;
+cursor: pointer;
+}
+
+.left-arrow {
+left: 0;
+color:grey;
+}
+
+.right-arrow {
+right: 0;
+color:#333;
+}
+
+
 </style>
 </head>
 <body>
@@ -495,8 +538,8 @@ background-color: rgba(0, 0, 0, 0.2);
 
 <div class="carousel-item">
 <a href="(link unavailable)" target="_blank">
-<img src="bobiwine.jpg" alt="Image 3">
-<p>Vote for Kyagulanyi  Robert - President</p>
+<img src="bobiine.jpg" alt="Image 3">
+<p>test 1 2</p>
 </a>
 </div>
 <div class="carousel-item">
@@ -562,7 +605,7 @@ background-color: rgba(0, 0, 0, 0.2);
             <img src="profile-pic.jpg" alt="Profile Picture">
             <h1 >Mp Busiro East Mabirizi Emmanuel 2026 - 2030</h1>
             <div class="buttons">
-                <a href="https://wa.me/256758296217?text=Iam%20interested%20in%20seeing%20you%20win%20the%20forthcoming%20elections%20dear%20Emmanuel,%20and%20I%20promise%20to%20contribute%20to%20your%20campaign%20with%20a%20sum%20of" class="whatsapp">
+                <a href="https://wa.me/256758296217?text=Iam%20interested%20in%20seeing%20you%20win%20the%20forthcoming%20elections%20dear%20Emmanuel,%20and%20I%20promise%20to%20contribute%20to%20your%20campaign%20with%20a%20sum%20of" class="whatsapp"id="contacts">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
                 <a href="mailto:mabiriziemmanuel@gmail.com?subject=Campaign%20Support&body=I'm%20interested%20in%20seeing%20you%20win%20the%20forthcoming%20elections%20dear%20Emmanuel,%20and%20I%20promise%20to%20contribute%20to%20your%20campaign%20with%20a%20sum%20of" class="message">
@@ -581,7 +624,7 @@ background-color: rgba(0, 0, 0, 0.2);
             </div>
             <div class="tabs">
                 <a href="#posts">Posts</a>
-                <a href="aboutpage.html">About</a>
+                <a href="aboutEma.html">About</a>
                 <a href="#photos">Photos</a>
                 <a href="#videos">Videos</a>
             </div>
@@ -596,9 +639,24 @@ background-color: rgba(0, 0, 0, 0.2);
     <section id="projects">
         <h2>Projects</h2>
         <p>Discover the various projects initiated by Mabirizi Emmanuel to improve our community.</p>
-        <p>Project Alpha: Building new schools.</p>
-        <p>Project Beta: Clean water initiative.</p>
-        <p>Project Gamma: Renewable energy sources.</p>
+        <p>Emmash wooden Belts</p>
+
+             <div class="image-gallery">
+<div class="gallery-wrapper">
+<img src="tour (1).jpg" alt="Tour 1">
+<img src="tour (2).jpg" alt="Tour 2">
+<img src="tour (3).jpg" alt="Tour 3">
+<img src="tour (4).jpg" alt="Tour 3">
+<img src="tour (5).jpg" alt="Tour 3">
+<img src="tour (6).jpg" alt="Tour 3">
+<img src="tour (7).jpg" alt="Tour 3">
+<img src="profile-pic.jpg" alt="Tour 3">
+</div>
+<div class="gallery-arrows">
+<div class="arrow left-arrow">&lt;</div>
+<div class="arrow right-arrow">&gt;</div>
+</div>
+</div>
     </section>
 
     <section id="sustainable">
@@ -721,7 +779,7 @@ background-color: rgba(0, 0, 0, 0.2);
 <p class="footer-info">Emmanuel is a looking forward to re-campaigning for the general elections for the post of Member of Parliament of Uganda ,he previously managed to know his weakness and with comfidence,Emmanuel comes back 10 times a competitive candidate for this post! He's relying on donations to sustain all his operations. Your support enables him to be competent throught the forth coming elections! Kindly consider donating to help us win the Victory!
  People Power! Our Power!</p>
         <ul>
-          <li><a href="#about"> About Mp Emmanuel </a></li>
+          <li><a href="aboutEma.html"> About Mp Emmanuel </a></li>
           <li><a href="whatsapp://send?phone=+256783101345&text=Hello, I really want you to design me a website and/ or an app!" target="_blank"> Contact Web Master</a></li>
           <li><a href='termsandconditions.html'> Terms & Conditions </a></li>
 

@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabirizi Emmanuel | About</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+      *{box-sizing:border-box;}
+      
+.container {
+max-width: 800px;
+margin: 40px auto;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+
+font-family: 'Merriweather', serif;
+margin: 0;
+padding: 0;
+background-image: linear-gradient(to right, #f2f2f2, #fff);
+}
+
+
+
+.breadcrumbs {
+  background-color: #2c3e50;
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+padding:20px;
+}
+
+.breadcrumbs li {
+margin-right: 20px;
+}
+
+.breadcrumbs a {
+color: #fff;
+text-decoration: none;
+}
+
+.header {
+  background-color: #2c3e50;
+color: #fff;
+padding: 10px;
+text-align: center;
+background-size: 80% 20px 0px;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+
+.about-section {
+margin-top: 20px;
+}
+
+.about-section h2 {
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.about-section p {
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+.img-container {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.img-container img {
+width: 95%;
+height: 80%;
+border-radius: 10px;
+}
+/* Scrollable img*/
+.image-gallery {
+position: relative;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+.gallery-wrapper {
+display: inline-block;
+}
+
+.gallery-wrapper img {
+width: 300px;
+height: auto;
+margin-right: 10px;
+border-radius: 10px;
+}
+
+.gallery-arrows {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+}
+
+.arrow {
+  color:;
+position: absolute;
+font-size: 24px;
+cursor: pointer;
+}
+
+.left-arrow {
+left: 0;
+color:grey;
+}
+
+.right-arrow {
+right: 0;
+color:#333;
+}
+
+  .carousel-container {
+position: relative;
+width: 100%;
+height: 300px;
+overflow: hidden;
+}
+
+.carousel {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.carousel-item {
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+height: 100%;
+transition: left 1s;
+}
+
+.carousel-item img {
+width: 100%;
+height: 80%;
+object-fit: cover;
+}
+
+.carousel-item a {
+text-decoration: none;
+color: blue;
+}
+
+.carousel-item p {
+position: absolute;
+bottom: 0;
+width: 100%;
+text-align: center;
+}
+
+.carousel-item.active {
+left: 0;
+}
+
+.carousel-nav {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.prev-btn, .next-btn {
+background-color: transparent;
+border: none;
+cursor: pointer;
+font-size: 24px;
+padding: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+background-color: rgba(0, 0, 0, 0.2);
+}
+    /*footer styling */
+    footer {
+      color: #fff;
+      background: #333;
+      position: relative; /* required to position the copyright at the bottom */
+      font-size: 80%;
+      width: 100%;
+    }
+    .footer-copyright {
+      width: 100%;
+      height: 40px;
+      background: #111;
+      /* positions the copyright at the bottom of the footer */
+      padding: 10px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    .footer-body {
+      margin-bottom: 40px;
+    }
+      /* the clearfix hack */
+    .footer-body::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    /* float the divs */
+    .footer-body > div {
+      float: left;
+      padding: 20px;
+    }
+    /* sets the width of the first column */
+    .footer-body > div:first-child {
+      font-size: 150%;
+      width: 35%;
+      text-align: center;
+    }
+    /* sets the width of the second column */
+    .footer-body > div:last-child {
+      width: 65%;
+    }
+    .footer-body ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      
+    }
+    .footer-body li > a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 7px;
+    }
+    </style>
+</head>
+<body>
+  <nav class="top-nav">
+<ul class="breadcrumbs">
+<li><a href="index.html">Home</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="index.html#social">Posts</a></li>
+<li><a href="donate.html">Donate</a></li>
+</ul>
+</nav>
+    <div class="container">
+        <div class="header">
+            <h1 class="animate__animated animate__fadeInDown">Mabirizi Emmanuel</h1>
+        </div>
+        <div class="about-section">
+            <h2 class="animate__animated animate__fadeInLeft">About Mabirizi Emmanuel</h2>
+          
+<!-- Choir audio Carousel images -->
+
+
+<div class="carousel-container home">
+<div class="carousel">
+<div class="carousel-item">
+<a href="#Vote" target="_blank">
+<img src="profile-pic.jpg" alt="Image 1">
+<p>Vote for Mabirizi Emmanuel Mp Busiro East</p>
+</a>
+</div>
+
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="bobiwne.jpg" alt="Image 3">
+<p></p>
+</a>
+</div>
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="politicalwarfare2.jpg" alt="Image 2">
+<p>Mp Emmanuel; the determined fighter of equality and freedom</p>
+</a>
+</div>
+
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="politicalwarfare.jpg" alt="Image 3">
+<p>Uganda needs leaders like you!</p>
+</a>
+</div>
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="fundraising.jpg" alt="Image 4">
+<p>Fundraising Launch</p>
+</a>
+</div>
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="tour (2).jpg" alt="Image 5">
+<p>Social life and Tours</p>
+</a>
+</div>
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="tour (3).jpg" alt="Image 6">
+<p>On a Research Tour for Environmental user-friendly practices</p>
+</a>
+</div>
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="tour (4).jpg" alt="Image 7">
+</a>
+</div>
+
+<div class="carousel-item">
+<a href="(link unavailable)" target="_blank">
+<img src="emashbelts.jpg" alt="Image 2">
+<p>Uganda's Youths Empowerment Projects</p>
+</a>
+</div>
+
+<div class="carousel-item">
+<a href="#omwoyoWamagezi" target="_blank">
+<img src="tour (5).jpg" alt="Image 8">
+<p>explore more...</p>
+</a>
+</div>
+</div>
+<div class="carousel-nav">
+<button class="prev-btn">&lt;</button>
+<button class="next-btn">&gt;</button>
+</div>
+</div>
+
+            <p class="animate__animated animate__fadeInRight">Mabirizi Emmanuel is a multifaceted individual with a rich background in various fields. Born and raised in Uganda, he has made a name for himself as a Master Guide, politician, entrepreneur, and music producer.</p>
+
+             <div class="image-gallery">
+<div class="gallery-wrapper">
+<img src="tour (1).jpg" alt="Tour 1">
+<img src="tour (2).jpg" alt="Tour 2">
+<img src="tour (3).jpg" alt="Tour 3">
+<img src="tour (4).jpg" alt="Tour 3">
+<img src="tour (5).jpg" alt="Tour 3">
+<img src="tour (6).jpg" alt="Tour 3">
+<img src="tour (7).jpg" alt="Tour 3">
+<img src="profile-pic.jpg" alt="Tour 3">
+</div>
+<div class="gallery-arrows">
+<div class="arrow left-arrow">&lt;</div>
+<div class="arrow right-arrow">&gt;</div>
+</div>
+</div>
+            <p class="animate__animated animate__fadeInUp">Mabirizi's early career began in music production, where he nurtured many artists in Tanzania (Maua Sama, Saida Karoli, Kariwa SDA Church Choir, Njoro family Choir among others) and Uganda. His passion for music was just the starting point for his diverse endeavors.</p>
+
+                </div>
+            </div>
+            
+            <div class="image-gallery">
+<div class="gallery-wrapper">
+<img src="tour (1).jpg" alt="Tour 1">
+<img src="tour (2).jpg" alt="Tour 2">
+<img src="tour (3).jpg" alt="Tour 3">
+<img src="tour (4).jpg" alt="Tour 3">
+<img src="tour (5).jpg" alt="Tour 3">
+<img src="tour (6).jpg" alt="Tour 3">
+<img src="tour (7).jpg" alt="Tour 3">
+<img src="profile-pic.jpg" alt="Tour 3">
+</div>
+<div class="gallery-arrows">
+<div class="arrow left-arrow">&lt;</div>
+<div class="arrow right-arrow">&gt;</div>
+</div>
+</div>
+            <p class="animate__animated animate__fadeInDown">Through Emash Wooden Belts Ltd, Mabirizi aims to provide employment opportunities for unemployed youths, addressing a pressing issue in Uganda. His commitment to community development and social responsibility is evident in his business ventures.</p>
+            <div class="image-gallery">
+<div class="gallery-wrapper">
+<img src="tour (1).jpg" alt="Tour 1">
+<img src="tour (2).jpg" alt="Tour 2">
+<img src="tour (3).jpg" alt="Tour 3">
+<img src="tour (4).jpg" alt="Tour 3">
+<img src="tour (5).jpg" alt="Tour 3">
+<img src="tour (6).jpg" alt="Tour 3">
+<img src="tour (7).jpg" alt="Tour 3">
+<img src="profile-pic.jpg" alt="Tour 3">
+</div>
+<div class="gallery-arrows">
+<div class="arrow left-arrow">&lt;</div>
+<div class="arrow right-arrow">&gt;</div>
+</div>
+</div>
+            <p class="animate__animated animate__fadeInLeft">Interestingly, Mabirizi has also worked in informal settings, such as Owino Market in Kampala, where he dealt in second-hand clothes. This experience has given him a unique understanding of the challenges faced by ordinary Ugandans.</p>
+            <div class="img-container">
+                <img src="masterguide2.jpg" alt="Mabirizi Emmanuel">
+            </div>
+            <p class="animate__animated animate__fadeInRight">Mabirizi Emmanuel's journey is a testament to his resilience, adaptability, and dedication to creating positive change in his community.</p>
+        </div>
+    </div>
+    
+            <!-- footer 2 -->
+<footer>
+    <div class="footer-body">
+      <div> MP Mabirizi Emmanuel for Busiro East </div>
+      <div>
+<p class="footer-info">Emmanuel is a looking forward to re-campaigning for the general elections for the post of Member of Parliament of Uganda ,he previously managed to know his weakness and with comfidence,Emmanuel comes back 10 times a competitive candidate for this post! He's relying on donations to sustain all his operations. Your support enables him to be competent throught the forth coming elections! Kindly consider donating to help us win the Victory!
+ People Power! Our Power!</p>
+        <ul>
+          <li><a href="#about"> About Mp Emmanuel </a></li>
+          <li><a href="whatsapp://send?phone=+256783101345&text=Hello, I really want you to design me a website and/ or an app!" target="_blank"> Contact Web Master</a></li>
+          <li><a href='termsandconditions.html'> Terms & Conditions </a></li>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © 2025 MP Busiro East to be  Mabirizi Emmanuel.
+      @erikis. All rights reserved.
+    </div>
+  </footer>
+    <script>
+ // Carousel 
+ 
+    const carouselItems = document.querySelectorAll('.carousel-item');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentSlide = 0;
+let intervalId;
+
+carouselItems[currentSlide].classList.add('active');
+
+intervalId = setInterval(() => {
+  carouselItems[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % carouselItems.length;
+  carouselItems[currentSlide].classList.add('active');
+}, 3000);
+
+prevBtn.addEventListener('click', () => {
+  clearInterval(intervalId);
+  carouselItems[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
+  carouselItems[currentSlide].classList.add('active');
+  setTimeout(() => {
+    intervalId = setInterval(() => {
+      carouselItems[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % carouselItems.length;
+      carouselItems[currentSlide].classList.add('active');
+    }, 3000);
+  }, 1000);
+});
+
+nextBtn.addEventListener('click', () => {
+  clearInterval(intervalId);
+  carouselItems[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % carouselItems.length;
+  carouselItems[currentSlide].classList.add('active');
+  setTimeout(() => {
+    intervalId = setInterval(() => {
+      carouselItems[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % carouselItems.length;
+      carouselItems[currentSlide].classList.add('active');
+    }, 3000);
+  }, 1000);
+});
+    </script>
+</body>
+</html>

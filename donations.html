@@ -70,7 +70,7 @@
             border: 1px solid #ccc;
         }
 
-        .donate-form input[type="number"]:hover {
+        .donate-form input:hover {
             outline: 1px solid #c6efce;
         }
 
@@ -124,46 +124,139 @@ padding: 20px;
         }
         p {color: grey;}
          ul>li {color: grey;}
+         /*light Box */
+             .lightbox {
+      display: table; /* helps us center the lightbox-content */
+      opacity: 0; /* fully transparent (hidden) */
+      z-index: -1; /* put the lightbox layer below the body */
+      transition-duration: 1s; /* duration of the fade in effect */
+    
+      /* make the lightbox occupy the entire page */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+    }
+    .lightbox:target {
+      opacity: 1; /* fully opaque (visible) */
+      z-index: 1; /* put the lightbox layer above the body */
+    }
+    .lightbox-content {
+      display: table-cell;
+      vertical-align: middle; /* vertically center */
+      text-align: center; /* horizontally center */
+    }
+    .close {
+      /* position the CLOSE button to the top-right corner */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    
+      /* style the close button */
+      font-size: 20px;
+      font-weight: 300;
+      text-decoration: none;
+      color: white;
+    }
+    
+    /* make the image responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+         
     </style>
 </head>
 <body>
-    <header>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="Emma home.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="Emma home.html#fundraising">Fundraising</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Donate Page</li>
-            </ol>
-        </nav>
-    </header>
+<header>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item"><a href="index.html#fundraising">Fundraising</a></li>
+<li class="breadcrumb-item active" aria-current="page">Donate Page</li>
+</ol>
+</nav>
+</header>
 <main>
-    <section class="donate-form">
-        <h2>Make a Donation</h2>
-        <form>
-            <label for="amount">Donation Amount:</label>
-            <input type="number" id="amount" required placeholder="Enter amount in UGX... e.g 2000000">
-            <label for="payment-method">Payment Method:</label>
-            <select id="payment-method" required>
-                <option value="">Select Payment Method</option>
-                <option value="paypal">PayPal</option>
-                <option value="bank-transfer">Bank Transfer</option>
-                <option value="mobile-money">Mobile Money</option>
-            </select>
-            <button class="donate-btn" type="submit">Donate</button>
-        </form>
-    </section>
+<section class="donate-form">
+<h2>Make a Donation</h2>
+<form>
+  <label for="name">Name</label>
+  <input type="text" id="name" placeholder="enter your name...">
+<label for="amount">Donation Amount:</label>
+<input type="number" id="amount" required placeholder="Enter amount in UGX... e.g 2000000">
+<label for="payment-method">Payment Method:</label>
+<select id="payment-method" required>
+<option value="">Select Payment Method</option>
+<option value="paypal">PayPal</option>
+<option value="bank-transfer">Bank Transfer</option>
+<option value="mobile-money">Mobile Money</option>
+</select>
+</form>
+<button class="donate-btn" onclick="lightBox()">Next</button>
+</section>
+<div class="lightbox" id="bank-transfer">
+<a href="donations.html" class="close">CLOSE</a>
+<div class="lightbox-content">
+<img src="profile-pic.jpg" />
+<p id="thanks"></p>
+<p>Deposit to Account Number: 3203875147</p>
+<p>Name: MABIRIZI EMMANUEL</p>
+<p>Bank Name: Centenary Bank</p>
+</div>
+</div>
+<div class="lightbox" id="mobile-money">
+<a href="donations.html" class="close">CLOSE</a>
+<div class="lightbox-content">
+<img src="profile-pic.jpg" />
+<p id="thanku"></p>
+<p>Deposit to Mobile Money/Wallet Number: +256 758296217</p>
+Name: MABIRIZI EMMANUEL
+<p>Network: Airtel - Uganda</p>
+</div>
+</div>
+<p style="color:red" id="Show"></p>
     <section class="impact">
         <h2>Make a Difference</h2>
-        <p>Your donation will help us achieve our mission to support the community</p>
+        <p>Your donation will help us achieve our mission to support the community by Winning the forth coming Elections</p>
         <ul>
+           <li>Uplift The Seventh day Adventist denomination and purpose of spreading the three angles message through Parliamentary power</li>
             <li>Provide education and skills training to underprivileged youth</li>
-            <li>Support healthcare initiatives for vulnerable communities</li>
-            <li>Empower women and girls through economic empowerment programs</li>
+            
+            <li>Empower Youth, women and girls through economic empowerment programs like Emash wooden Belts and more</li>
+     
         </ul>
     </section>
 </main>
 <footer>
-    <p>&copy; 2023 Mega Fundraising. All rights reserved.</p>
+<p>&copy; 2023 Mega Fundraising. All rights reserved.</p>
 </footer>
+<script>
+function lightBox() {
+const Payment = document.getElementById("payment-method").value;
+let thanks;
+
+var name= document.getElementById('name').value;
+
+var amount=document.getElementById("amount").value;
+
+switch (Payment) {
+case "bank-transfer":
+document.getElementById("bank-transfer").style.opacity = 1;
+document.getElementById("bank-transfer").style.zIndex = 1;
+document.getElementById("thanks").innerHTML="Thank you dear" + " "+name +" "+ "for accepting to donate"+" "+ "shs."+" "+ amount;
+break;
+case "mobile-money":
+document.getElementById("mobile-money").style.opacity = 1;
+document.getElementById("mobile-money").style.zIndex = 1;
+document.getElementById("thanku").innerHTML="Thank you dear" + " "+name +" "+ "for accepting to donate"+" "+ "shs."+" "+ amount;
+break;
+default:
+document.getElementById("Show").innerHTML = "Sorry for the inconveniences, PayPal is currently not available.";
+}
+}
+</script>
 </body>
 </html>
